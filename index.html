@@ -1,33 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Base Apparel coming soon page</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  We're coming soon
-
-  Hello fellow shoppers! We're currently building our new fashion store. 
-  Add your email below to stay up-to-date with announcements and our launch deals.
-
-  Email Address
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
-</body>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="">
+    <header>
+      <nav class="bg-nav-color pl-10 py-6">
+        <div class=""><img src="./images/logo.svg" alt="" class="w-36" /></div>
+      </nav>
+    </header>
+    <main>
+      <div class="bg-nav-color">
+        <div>
+          <img src="./images/hero-mobile.jpg" alt="" class="w-full md:hidden" />
+        </div>
+        <div class="flex flex-col text-center px-10 pt-14 gap-5 pb-6">
+          <h1 class="uppercase text-6xl">
+            <span class="text-Desaturated-Red font-thin">We're</span> coming
+            soon
+          </h1>
+          <p class="text-Desaturated-Red text-[15px]">
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals.
+          </p>
+        </div>
+        <form class="pb-10">
+          <div class="flex justify-center items-center">
+            <input
+              type="email"
+              placeholder="Email Address"
+              class="py-4 pl-8 rounded-full border w-[350px] bg-nav-color border-Desaturated-Red placeholder:text-Desaturated-Red placeholder:text-opacity-30 active:border-red"
+              required
+            />
+            <i id="error-icon" class="absolute translate-x-20 hidden"
+              ><img src="./images/icon-error.svg" alt=""
+            /></i>
+            <button
+              id="submit-btn"
+              class="w-[80px] flex justify-center py-[19px] rounded-full absolute translate-x-36 active:shadow-xl active:bg-opacity-5"
+            >
+              <img src="./images/icon-arrow.svg" alt="" />
+            </button>
+          </div>
+          <p
+            id="error-msg"
+            class="text-red text-sm text-center pr-28 pt-1 hidden"
+          >
+            Please provide a valid email
+          </p>
+        </form>
+      </div>
+    </main>
+    <div class="">
+      <img
+        src="./images/hero-desktop.jpg"
+        alt=""
+        class="hidden md:inline-block"
+      />
+    </div>
+    <!-- <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Wilou</a>.
+      </p>
+    </footer> -->
+    <script src="main.js"></script>
+  </body>
 </html>
