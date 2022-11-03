@@ -31,19 +31,20 @@
       }
     </style>
   </head>
-  <body class="">
+  <body class="md:flex">
     <header>
-      <nav class="bg-nav-color pl-10 py-6">
+      <nav class="bg-nav-color pl-10 py-6 md:hidden">
         <div class=""><img src="./images/logo.svg" alt="" class="w-36" /></div>
       </nav>
     </header>
-    <main>
-      <div class="bg-nav-color">
+    <main class="">
+      <div class="bg-nav-color md:h-full">
+        <div class=""><img src="./images/logo.svg" alt="" class="hidden md:inline w-36 md:mx-44 md:pt-16 md:mb-12" /></div>
         <div>
           <img src="./images/hero-mobile.jpg" alt="" class="w-full md:hidden" />
         </div>
-        <div class="flex flex-col text-center px-10 pt-14 gap-5 pb-6">
-          <h1 class="uppercase text-6xl">
+        <div class="flex flex-col text-center px-10 pt-14 gap-5 pb-6 md:text-left md:mx-32 md:pb-10">
+          <h1 class="uppercase text-6xl md:text-8xl md:pr-20">
             <span class="text-Desaturated-Red font-thin">We're</span> coming
             soon
           </h1>
@@ -54,39 +55,38 @@
           </p>
         </div>
         <form class="pb-10">
-          <div class="flex justify-center items-center">
+          <div class="flex justify-center items-center md:justify-start md:pl-[168px]">
             <input
               type="email"
               placeholder="Email Address"
-              class="py-4 pl-8 rounded-full border w-[350px] bg-nav-color border-Desaturated-Red placeholder:text-Desaturated-Red placeholder:text-opacity-30 active:border-red"
+              class="py-4 pl-8 rounded-full border w-[350px] bg-nav-color border-Desaturated-Red placeholder:text-Desaturated-Red placeholder:text-opacity-30 focus:border-red"
               required
             />
-            <i id="error-icon" class="absolute translate-x-20 hidden"
+            <i id="error-icon" class="absolute translate-x-20 md:translate-x-64 hidden"
               ><img src="./images/icon-error.svg" alt=""
             /></i>
             <button
               id="submit-btn"
-              class="w-[80px] flex justify-center py-[19px] rounded-full absolute translate-x-36 active:shadow-xl active:bg-opacity-5"
+              class="w-[80px] flex justify-center py-[19px] rounded-full absolute translate-x-36 active:shadow-xl active:bg-opacity-5 md:translate-x-72"
             >
               <img src="./images/icon-arrow.svg" alt="" />
             </button>
           </div>
           <p
             id="error-msg"
-            class="text-red text-sm text-center pr-28 pt-1 hidden"
+            class="text-red text-sm text-center pr-28 pt-1 md:text-start md:pl-48 hidden"
           >
             Please provide a valid email
           </p>
         </form>
       </div>
     </main>
-    <div class="">
-      <img
-        src="./images/hero-desktop.jpg"
-        alt=""
-        class="hidden md:inline-block"
-      />
-    </div>
+
+    <img
+      src="./images/hero-desktop.jpg"
+      alt=""
+      class="hidden md:inline-block md:h-full"
+    />
     <!-- <footer>
       <p class="attribution">
         Challenge by
